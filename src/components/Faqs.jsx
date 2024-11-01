@@ -40,7 +40,7 @@ function Faqs() {
         </div>
       </div>
 
-      <div className="Q-list">
+      <div className="q-list">
         {faqItem?.map((item) => (
           <FaqItem key={item.id} title={item.title} content={item.content} />
         ))}
