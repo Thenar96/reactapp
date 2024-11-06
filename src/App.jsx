@@ -8,10 +8,19 @@ import Subscribe from "./components/Subscribe";
 import Function from "./components/Function";
 import Reviews from "./components/Reviews";
 import Faqs from "./components/Faqs";
+import React, { useState, createContext } from "react";
+
+export const ThemeContext = createContext();
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
   return (
     <>
+      <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <Header />
       <Hero />
       <Features />
@@ -21,6 +30,7 @@ function App() {
       <Faqs />
       <Subscribe />
       <Footer />
+      </ThemeContext.Provider>
     </>
   );
 }

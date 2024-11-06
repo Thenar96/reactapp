@@ -8,6 +8,7 @@ export default function FaqItem({ title, content }) {
   };
 
   return (
+    
     <div className="folds">
       <h4 onClick={toggleOpen} style={{ cursor: "pointer" }}>
         {title}

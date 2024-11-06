@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import FaqItem from "./FaqItem";
+import { ThemeContext } from "../App";
 
 function Faqs() {
+  const { theme } = useContext(ThemeContext);
   const [faqItem, setFaqItem] = useState([]);
 
   async function fetchData() {
@@ -16,6 +18,8 @@ function Faqs() {
     fetchData();
   }, []);
   return (
+    <div className={theme === "light" ? "light-theme" : "dark-theme"}>
+
     <section className="faqs">
       <div className="questions">
         <h2>Any questions? Check out the FAQs</h2>
@@ -46,6 +50,7 @@ function Faqs() {
         ))}
       </div>
     </section>
+    </div>
   );
 }
 
