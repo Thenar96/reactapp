@@ -9,13 +9,12 @@ export default function FaqItem({ title, content }) {
 
   return (
     
-    <div className="folds">
-      <h4 onClick={toggleOpen} style={{ cursor: "pointer" }}>
-        {title}
-      </h4>
-      {isOpen && (
-        <p>{content}</p>
-      )}
-    </div>
-  );
+    <div className="folds" onClick={toggleOpen}>
+    <h4>
+      {title || "Titel saknas"}
+      <span className={`arrow ${isOpen ? "open" : ""}`}></span>
+    </h4>
+    {isOpen && <p>{content || "Innehåll saknas"}</p>}
+  </div>
+);
 }

@@ -8,16 +8,25 @@ import Subscribe from "./components/Subscribe";
 import Function from "./components/Function";
 import Reviews from "./components/Reviews";
 import Faqs from "./components/Faqs";
-import React, { useState, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 
 export const ThemeContext = createContext();
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme); 
   };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
