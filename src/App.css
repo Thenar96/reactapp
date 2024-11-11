@@ -67,7 +67,7 @@ Header {
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-gray);
   color: var(--color-white);
   text-decoration: none;
 }
@@ -445,10 +445,22 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+.contact-us:hover {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 .chat-us {
   color: green;
   text-decoration: none;
   text-align: center;
+}
+
+.chat-us:hover {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .contact-support {
@@ -559,13 +571,20 @@ input:checked + .slider:before {
   min-width: 350px;
 }
 
-.email-right button {
+.Subscribe-btn {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: var(--color-primary);
-  color: white;
   border: none;
   border-radius: 0 10px 10px 0;
+  text-decoration: none;
+  color: white;
+}
+
+.Subscribe-btn:hover {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 .email-right button:hover {

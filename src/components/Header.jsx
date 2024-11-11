@@ -7,8 +7,9 @@ function Header() {
   return (
     <header className={`topbar ${theme === "light" ? "light-theme" : "dark-theme"}`}>
       <div className="logo">
-        <img src="src/assets/Silicon.svg" alt="Logo" />
+        <img src="src/assets/Siliconlogo.svg" alt="Logo" />
       </div>
+      <h2>Silicon</h2>
       <nav id="main-menu" className="navbar">
         <a className="nav-link" href="#">
           Features

@@ -17,7 +17,7 @@ export default function Subscribe() {
         </div>
         <div className="email-right">
           <input type="Your Email" placeholder="Enter your Email" />
-          <button>Subscribe</button>
+          <a href="#"className="Subscribe-btn">Subscribe</a>
         </div>
       </div>
     </section>
