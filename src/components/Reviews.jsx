@@ -14,10 +14,10 @@ export default function Reviews() {
 
   return (
     <div className={theme === "light" ? "light-theme" : "dark-theme"}>
-      <div
+      <div className="review-section"
         style={{ display: "flex", justifyContent: "center", padding: "2rem" }}
       >
-        <h2 style={{ fontSize: '2rem', lineHeight: '1.2', margin: 0 }}>
+        <h2 style={{ fontSize: '2rem', lineHeight: '1.2', margin: 20 }}>
           Clients are <br />
           <span style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Loving Our App</span>
         </h2>

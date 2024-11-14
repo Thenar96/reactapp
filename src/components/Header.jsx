@@ -2,21 +2,30 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../App";
 
 function Header() {
-  const { theme, toggleTheme } = useContext(ThemeContext); 
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <header className={`topbar ${theme === "light" ? "light-theme" : "dark-theme"}`}>
+    <header
+      className={`topbar ${theme === "light" ? "light-theme" : "dark-theme"}`}
+    >
       <div className="logo">
         <img src="src/assets/Siliconlogo.svg" alt="Logo" />
       </div>
       <h2>Silicon</h2>
       <nav id="main-menu" className="navbar">
-        <a className="nav-link" href="#">
+        <a className="nav-link-features" href="#">
           Features
+        </a>
+        <a className="nav-link-contact" href="#">
+          Contact
         </a>
       </nav>
       <label className="switch">
-        <input type="checkbox" onChange={toggleTheme} checked={theme === "dark"} />
+        <input
+          type="checkbox"
+          onChange={toggleTheme}
+          checked={theme === "dark"}
+        />
         <div className="slider round"></div>
       </label>
 

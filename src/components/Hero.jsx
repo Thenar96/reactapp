@@ -21,6 +21,12 @@ export default function Hero() {
               <img src="src/assets/google.svg" alt="" />
             </a>
           </div>
+          <div className="discover-more">
+            <div className="circle">
+              <span className="point-arrow">↓</span>
+            </div>
+            <span className="text">Discover more</span>
+          </div>
         </div>
         <div className="hero-phones">
           <img src="src/assets/test.svg" alt="preview" />

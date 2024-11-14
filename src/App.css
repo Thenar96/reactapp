@@ -18,11 +18,26 @@
   color: #ffffff;
 }
 
+.light-theme .app {
+  background-color: #e9eefd;
+}
+
+.light-theme .review-section {
+  background-color: #e9eefd;
+}
+
+.dark-theme .app,
+.review-section {
+  background-color: #2c2d33;
+}
+
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme p {
   color: #e0e0e0;
 }
+
+
 
 body,
 section,
@@ -46,17 +61,23 @@ Header {
   padding: 1rem;
 }
 
-.nav-link {
-  color: var(--color-primary);
+.nav-link-features {
   font-weight: 700;
   text-decoration: none;
+  margin-left: 1rem;
+}
+
+.nav-link-contact {
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 1rem;
   margin-right: 1400px;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
   color: var(--color-primary);
   text-decoration: underline;
-}
+} */
 
 .btn-primary {
   margin-left: 0.5rem;
@@ -166,6 +187,35 @@ input:checked + .slider:before {
   padding: 0.2em;
 }
 
+.discover-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15em;
+}
+
+.discover-more .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.discover-more .arrow {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.point-arrow {
+  font-size: 1.5rem;
+  margin-left: 8px;
+  animation: bounce 1.5s infinite;
+  margin-right: 1em;
+  border-radius: 50%;
+}
 /* .buttons :hover {
     background-color: var(--color-gray);
     color: var(--color-white);
@@ -233,7 +283,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: auto;
-  max-width: 25%;
+  /* max-width: 25%; */
   max-height: 40%;
   position: absolute;
 }
@@ -400,7 +450,7 @@ input:checked + .slider:before {
 } */
 
 .faqs {
-  width: 65%;
+  width: 50%;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -464,8 +514,8 @@ input:checked + .slider:before {
 }
 
 .contact-support {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(216, 214, 214, 0.3);
+  box-shadow: 0 2px 10px rgba(150, 150, 150, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   padding: 20px;
@@ -482,11 +532,12 @@ input:checked + .slider:before {
   margin-right: 120px;
 }
 
-.Q-list {
+/* .Q-list {
   width: 80%;
   margin-left: 50px;
   flex: 0 0 auto;
-}
+  background-color: transparent
+} */
 
 .folds {
   border-radius: 10px;
