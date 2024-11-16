@@ -31,6 +31,7 @@ function Header() {
 
       <a id="auth-signin" href="#" className="btn-primary">
         <i className="fa-regular fa-user"></i>
+        <img src="src/assets/signuplogo.svg" alt="person" />
         <span>Sign in / up</span>
       </a>
     </header>

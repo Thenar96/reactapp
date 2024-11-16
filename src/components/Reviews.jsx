@@ -14,12 +14,15 @@ export default function Reviews() {
 
   return (
     <div className={theme === "light" ? "light-theme" : "dark-theme"}>
-      <div className="review-section"
+      <div
+        className="review-section"
         style={{ display: "flex", justifyContent: "center", padding: "2rem" }}
       >
-        <h2 style={{ fontSize: '2rem', lineHeight: '1.2', margin: 20 }}>
+        <h2 style={{ fontSize: "2rem", lineHeight: "1.2", margin: 20 }}>
           Clients are <br />
-          <span style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Loving Our App</span>
+          <span style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+            Loving Our App
+          </span>
         </h2>
         <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
           {testimonials.map((testimonial) => (
@@ -29,10 +32,29 @@ export default function Reviews() {
                 width: "300px",
                 padding: "1.5rem",
                 borderRadius: "12px",
-                boxShadow: "0px 4px 12px rgHba(0, 0, 0, 0.1)",
+                boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)",
                 border: "1px solid var(--color-gray)",
+                position: "relative",
               }}
             >
+              <div
+                style={{
+                  fontSize: "2.5rem",
+                  color: "white",
+                  backgroundColor: "var(--color-primary)",
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  borderRadius: "30%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  position: "absolute",
+                  top: "-25px",
+                  left: "15px",
+                }}
+              >
+                &ldquo;
+              </div>
               <div
                 style={{
                   display: "flex",
