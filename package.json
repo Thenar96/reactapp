@@ -24,5 +24,6 @@
     "eslint-plugin-react-refresh": "^0.4.13",
     "globals": "^15.11.0",
     "vite": "^5.4.9"
-  }
+  },
+  "homepage": "https://thenar96.github.io/reactapp"
 }
